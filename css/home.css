@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #5a2400fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #b6a401;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    padding: 5px;
+    color: whitesmoke;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4e2615;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #3d1a0a;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column {
+    width: calc(22% - 20px);
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    & img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        mix-blend-mode: multiply;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifq;
+    }
+
+    .comprarbtn {
+        margin: 0;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.column button:hover {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #5a2400fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #b6a401;
+
+    & p {
+        font-size: 18px;
+        color: #eeeeee;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+}
