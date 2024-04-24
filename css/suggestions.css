@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #3d1a0a;
+}
+
+header {
+    width: 100%;
+    background-color: #5a2400fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #b6a401;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    padding: 5px;
+    color: whitesmoke;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4e2615;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+.card{
+    width: 95%;
+    background-color: whitesmoke;
+    padding: 0.5rem 2rem 2rem 2rem ;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+
+    & .sugImg {
+        flex: 1;
+    }
+
+    .sugText {
+        flex: 2;
+    }
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+    }
+    
+    & ul {
+        margin-left: 2rem;
+    }
+
+    & .sugText {
+        margin: 1rem 0;
+        text-align: justify;
+        padding-right: 1rem;
+    }
+
+    & .homeBtn {
+        display: flex;
+        justify-content: end;
+    }
+
+    & button {
+        width: 12rem;
+        height: 3rem;
+        border: 1px solid black;
+        border-radius: 2rem;
+        font-size: 1rem;
+        transition: 0.4s;
+    }
+
+    & button:hover{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+#sugsGeral {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 0.5rem;
+
+    & .sugGeral {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #5a2400fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #b6a401;
+
+    & p {
+        font-size: 18px;
+        color: #eeeeee;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+}
