@@ -65,6 +65,9 @@ main {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     & img {
         max-width: 100%;
