@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Login</title>
+    <link rel="stylesheet" href="../css/loginpage.css">
+</head>
+<body>
+    <header>
+        <h1>Vinheria Agnello</h1>
+    </header>
+    
+    <div class="container">
+        <div class="login-box">
+            <h2>Login de usuário</h2>
+            <div class="usuario">
+                <label for="userType">Usuário:</label>
+                <input type="text" name="" id="userType" placeholder="Digite seu nome de usuário">
+            </div>
+            
+            <div class="senha">
+                <label for="userPassword">Senha:</label>
+                <input type="password" id="userPassword" placeholder="Digite sua senha">
+            </div>
+            
+            <button id="btnConfirm" onclick="confirmar()">Confimar</button>
+
+            <div class="termos">
+                <button id="btnTermos" onclick="termos()"> </button>
+                <p>Eu li os termos e condições do Agnello e prometo que sou uma pessoa muito boa</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <p>Todos os direitos reservados para a Vinheria Agnello - 2024 ©</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
