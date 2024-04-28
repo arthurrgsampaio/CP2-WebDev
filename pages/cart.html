@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header>
+        <a href="./home.html" id="logo">
+            <h1>VINHERIA AGNELLO</h1>
+        </a>
+        <nav>
+            <a href="../pages/loginpage.html">Fazer Login</a>
+            <a href="#">Favoritos</a>
+            <a href="../pages/suggestions.html">Sugestões</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Carrinho de Compras</h2>
+        <ul id="items_do_carrinho">
+           
+        </ul>
+        <button id="rmvbtn">Excluir Carrinho</button>
+        <div class="cupons">
+            <label for="cupom">Possui cupom de desconto?:</label>
+            <input type="text" id="cupom" placeholder="digite aqui">
+            <button id="aplicar-cupom">Aplicar Cupom</button>
+            <p id="accept_cupom"></p>
+            <p id="error_cupom"></p>
+            <div id="total">Total: R$ <span id="quantia-total">0.00</span></div>
+            <div><button>Finalizar Compra </button></div>
+        </div>
+    </div>
+    <footer>
+        <p>Todos os direitos reservados para a Vinheria Agnello - 2024 ©</p>
+    </footer>
+    <script src="../scripts/cart.js"></script>
+</body>
+</html>
