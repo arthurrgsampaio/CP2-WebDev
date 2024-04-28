@@ -14,7 +14,7 @@
         <nav>
             <a href="./suggestions.html">Sugestões</a>
             <a href="#">Favoritos</a>
-            <a href="#">Carrinho</a>
+            <a href="./cart.html">Carrinho</a>
         </nav>
     </header>
 
@@ -24,11 +24,13 @@
             <div class="usuario">
                 <label for="userType">Usuário:</label>
                 <input type="text" name="" id="userType" placeholder="Digite seu nome de usuário">
+                <p id="userError"> </p>
             </div>
             
             <div class="senha">
                 <label for="userPassword">Senha:</label>
                 <input type="password" id="userPassword" placeholder="Digite sua senha">
+                <p id="passwordError"> </p>
             </div>
             
             <button id="btnConfirm" onclick="confirmar()">Confimar</button>
@@ -40,7 +42,7 @@
                         btn.style.backgroundColor = "blue";
                     }
                 </script>
-                <p>Eu li e concordo com os termos e condições da Vinheria Agnello </p>
+                <p>Eu aceito receber informações por e-mail sobre novidades da Vinheria Agnello </p>
             </div>
             
         </div>
@@ -50,6 +52,6 @@
         <p>Todos os direitos reservados para a Vinheria Agnello - 2024 ©</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../scripts/loginpage.js"></script>
 </body>
 </html>
