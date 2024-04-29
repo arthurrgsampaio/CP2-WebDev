@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url(../assets/background_fav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #3d1a0a;
+}
+
+header {
+    width: 100%;
+    background-color: #5a2400fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #b6a401;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    padding: 5px;
+    color: whitesmoke;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4e2615;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    margin-top: 35px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    border: 1px solid #b6a401;
+    background-color: #3d1b04ee;
+    border-radius: 10px;
+    
+ 
+    & h2 {
+        margin-top: 15px;
+        padding-bottom: 20px;
+        font-family: cursive ;
+        border-bottom: 2px solid #b6a401;
+        text-align: center;
+        font-size: 25px;
+    }
+   
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5a2400fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #b6a401;
+
+    & p {
+        font-size: 18px;
+        color: #eeeeee;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    }
+}

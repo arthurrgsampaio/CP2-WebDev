@@ -83,6 +83,7 @@ main {
     }
 
     button {
+        margin: 5px;
         padding: 10px 20px;
         font-size: 15px;
         border: 1px solid #cccccc;
@@ -93,7 +94,11 @@ main {
     }
 
     .comprarbtn {
-        margin: 0;
+        margin: 5px;
+    }
+    
+    .likebtn {
+        margin: 5px;
     }
 
     p {
