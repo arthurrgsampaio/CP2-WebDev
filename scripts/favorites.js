@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const newDiv = document.createElement("div")
                 const newP = document.createElement("p");
                 newDiv.className = "favDiv";
-                newP.textContent = fav;
+                newP.textContent = `- ${fav}`;
                 newDiv.appendChild(newP);
                 favs.appendChild(newDiv);
             });
