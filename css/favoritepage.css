@@ -4,22 +4,20 @@
     margin: 0;
 }
 
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url(../assets/background_fav.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    background-color: #3d1a0a;
 }
 
 header {
@@ -30,6 +28,10 @@ header {
     justify-content: space-between;
     border-bottom: 2px solid #b6a401;
     z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header h1 {
@@ -62,29 +64,55 @@ nav a:hover {
     text-decoration: none;
 }
 
-.container {
-    width: 80%;
-    height: 80%;
-    padding: 20px;
-    margin-top: 35px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    border: 1px solid #b6a401;
-    background-color: #3d1b04ee;
-    border-radius: 10px;
-    
- 
-    & h2 {
-        margin-top: 15px;
-        padding-bottom: 20px;
-        font-family: cursive ;
-        border-bottom: 2px solid #b6a401;
-        text-align: center;
-        font-size: 25px;
+main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/background_fav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#favs {
+    max-height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    & .favHeader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        & button {
+            padding: 5px 20px;
+            border: 1px solid black;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.4s;
+        }
     }
-   
+
+    & .favDiv {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+
+        & p {
+            width: 70%;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
 }
 
 footer {
