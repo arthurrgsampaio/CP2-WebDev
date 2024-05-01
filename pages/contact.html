@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Formulario de contato</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VINHERIA AGNELLO</h1>
+        
+            <nav>
+                <a href="./contact.html">Contato</a>
+                <a href="#">Fazer Login</a>
+                <a href="#">Favoritos</a>
+                <a href="#">Carrinho</a>
+            </nav>
+        </header>
+        <main style="margin-top: 20px;">
+            <div class="column">
+                <form action="submit.php" method="POST">
+                    <h2>Entre em Contato</h2>
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                    <h2>
+                        <input type="text" id="nome" name="nome" required>
+                    </h2>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <h2>
+                            <input type="email" id="email" name="email" required>
+                        </h2>
+                    </div>
+                    <div class="input-group">
+                        <label for="telefone">Telefone:</label>
+                        <h2>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </h2>
+                    </div>
+                    <div class="input-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <h2>
+                            <textarea id="mensagem" name="mensagem" required ></textarea>
+                        </h2>
+                    </div>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        
+        </main>
+        <footer>
+            <p>Todos os direitos reservados para a Vinheria Agnello - 2024 ©</p>
+        </footer>
+    </div>
+</body>
+</html>
