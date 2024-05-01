@@ -62,30 +62,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-.container {
-    width: 80%;
-    height: 80%;
-    padding: 20px;
-    margin-top: 35px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    border: 1px solid #b6a401;
-    background-color: #3d1b04ee;
-    border-radius: 10px;
-    
- 
-    & h2 {
-        margin-top: 15px;
-        padding-bottom: 20px;
-        font-family: cursive ;
-        border-bottom: 2px solid #b6a401;
-        text-align: center;
-        font-size: 25px;
-    }
-   
-}
+
 
 footer {
     position: fixed;
